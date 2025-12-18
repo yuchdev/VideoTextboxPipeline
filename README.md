@@ -1,4 +1,4 @@
-# VideoTextboxPipeline
+# Video Textbox Pipeline
 
 Automated pipeline for translating burned-in video subtitles. The project detects on-screen subtitle text via OCR, groups frames into stable subtitle segments, auto-detects source language (EN/UK/RU), translates text using a pluggable backend, and renders translated subtitles back into the video.
 
