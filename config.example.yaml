@@ -1,0 +1,26 @@
+# Example configuration file for VideoTextboxPipeline
+
+# Language settings
+target_lang: en  # Target language for translation
+source_lang: null  # Source language (null for auto-detect)
+
+# OCR settings
+ocr_lang: en  # Language for OCR detection
+use_gpu: false  # Whether to use GPU for OCR
+min_confidence: 0.5  # Minimum confidence threshold for OCR detections
+bottom_ratio: 0.3  # Bottom portion of frame to search for subtitles (0.3 = bottom 30%)
+
+# Segmentation settings
+similarity_threshold: 0.8  # Text similarity threshold for grouping frames (0-1)
+min_segment_frames: 3  # Minimum number of frames for a valid subtitle segment
+max_gap_frames: 2  # Maximum gap between frames to still consider same segment
+
+# Rendering settings
+render_mode: rectangle  # Rendering mode: 'rectangle' or 'inpaint'
+font_path: null  # Path to custom font file (null for default)
+font_size: 32  # Font size for rendered text
+text_color: [255, 255, 255]  # Text color as RGB (white)
+padding: 10  # Padding around text in pixels
+
+# Video settings
+output_codec: mp4v  # Output video codec
