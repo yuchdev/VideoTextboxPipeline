@@ -32,7 +32,7 @@ class SubtitleRenderer:
             else:
                 # Try to use a default font
                 self.font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", font_size)
-        except:
+        except (OSError, IOError):
             # Fallback to default PIL font
             self.font = ImageFont.load_default()
     

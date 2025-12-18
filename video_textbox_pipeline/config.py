@@ -2,7 +2,7 @@
 
 import yaml
 from typing import Dict, Any, Optional
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 
 @dataclass

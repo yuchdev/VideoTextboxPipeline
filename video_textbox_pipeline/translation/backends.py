@@ -1,7 +1,10 @@
 """Translation backend interfaces and implementations."""
 
+import logging
 from abc import ABC, abstractmethod
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 
 class TranslatorBackend(ABC):
@@ -52,7 +55,7 @@ class GoogleTranslatorBackend(TranslatorBackend):
             )
             return result.text
         except Exception as e:
-            print(f"Translation error: {e}")
+            logger.warning(f"Translation error: {e}")
             return text
 
 
