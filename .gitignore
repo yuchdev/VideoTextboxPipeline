@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project specific
+*.mp4
+*.avi
+*.mkv
+*.mov
+rendered_example.jpg
+output/
+temp/
